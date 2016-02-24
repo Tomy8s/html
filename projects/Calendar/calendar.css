@@ -96,6 +96,7 @@ li{
     border-radius: 13px;
     padding: 3px;
     margin-top: -10px;
+    overflow: hidden;
 }
 .plus{
     font-weight: 900;
