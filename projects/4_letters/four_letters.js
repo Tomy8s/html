@@ -1,19 +1,20 @@
 //By T.Yates
-
+var words = ["axes", "cars", "fish", "game", "july", "jump", "june", "lock", "made", "make", "pull", "puts", "swam", "swim", "swum", "taxi", "type"];
+var word = words[Math.ceil(Math.random()*words.length)];
 function play() {
     if (document.getElementById('guess').value.length != 4) {
         alert("Please enter a 4-letter word");
     } else {
-        var word = "fish";
-        var guess = document.getElementById('guess').value;
+        //var word = "fish";
+        var guess = document.getElementById('guess').value.toLowerCase();
         var rw = 0;
         var rr = 0;
         
         for (c = 0; c < 4; c++) {
-            if (word[c] === guess[c]) {
+            if (word[c] == guess[c]) {
                 rr++;
             }else for (d = 0; d < 4; d++) {
-                if (word[c] === guess[d]) {
+                if (word[c] == guess[d]) {
                     rw++;
                     break;
                 }

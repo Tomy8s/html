@@ -4,10 +4,18 @@
 <html>
 <head>
     <title>Guess my four letter word</title>
+    <link rel="stylesheet" type="text/css" href="../../home.css">
     <script type="text/javascript" src="four_letters.js"></script>
 </head>
 
 <body>
+    <h4><u>How to play</u></h4><br>
+    <p>
+        I've thought of a word. My word has four letters. Your task is to guess my word. Every time you make a guess I'll tell you how many of the letters in your word are <b>R</b>ight, but in the <b>W</b>rong place in the first column, and how many are <b>R</b>ight and in the <b>R</b>ight place in the second column.
+    </p>
+    <P>
+        Good luck!
+    </P>
         Guess the word: <input type="text" id="guess" maxlength="4" onchange="play()" autofocus>
         <button onclick="play()">Guess!</button>
     <table>
